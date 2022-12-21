@@ -1,9 +1,3 @@
-//
-//  SoccerLiveActivityApp.swift
-//  SoccerLiveActivity
-//
-//  Created by Javier Laguna on 19/11/22.
-//
 
 import SwiftUI
 
@@ -11,7 +5,7 @@ import SwiftUI
 struct SoccerLiveActivityApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MatchView()
         }
     }
 }

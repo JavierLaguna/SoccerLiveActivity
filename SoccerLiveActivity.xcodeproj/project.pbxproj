@@ -8,12 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		49B1CF1529295CD200A59A68 /* SoccerLiveActivityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1CF1429295CD200A59A68 /* SoccerLiveActivityApp.swift */; };
-		49B1CF1729295CD200A59A68 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1CF1629295CD200A59A68 /* ContentView.swift */; };
+		49B1CF1729295CD200A59A68 /* MatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1CF1629295CD200A59A68 /* MatchView.swift */; };
 		49B1CF1929295CD600A59A68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49B1CF1829295CD600A59A68 /* Assets.xcassets */; };
 		49B1CF1D29295CD600A59A68 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49B1CF1C29295CD600A59A68 /* Preview Assets.xcassets */; };
 		49B1CF2729295CD600A59A68 /* SoccerLiveActivityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1CF2629295CD600A59A68 /* SoccerLiveActivityTests.swift */; };
 		49B1CF3129295CD600A59A68 /* SoccerLiveActivityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1CF3029295CD600A59A68 /* SoccerLiveActivityUITests.swift */; };
 		49B1CF3329295CD600A59A68 /* SoccerLiveActivityUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1CF3229295CD600A59A68 /* SoccerLiveActivityUITestsLaunchTests.swift */; };
+		49B1CF4229295D9500A59A68 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1CF4129295D9500A59A68 /* Team.swift */; };
+		49B1CF4429295E0500A59A68 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1CF4329295E0500A59A68 /* Player.swift */; };
+		49B1CF4629295E2800A59A68 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1CF4529295E2800A59A68 /* Match.swift */; };
+		49B1CF4829295E4500A59A68 /* MatchTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1CF4729295E4500A59A68 /* MatchTime.swift */; };
+		49B1CF4A29295E5A00A59A68 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1CF4929295E5A00A59A68 /* Goal.swift */; };
+		49B1CF4C29295E7100A59A68 /* MatchScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1CF4B29295E7100A59A68 /* MatchScore.swift */; };
+		49B1CF4E29295E8500A59A68 /* MatchSubstitution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1CF4D29295E8500A59A68 /* MatchSubstitution.swift */; };
+		49CA26A22929614700797C76 /* MatchSimulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CA26A12929614700797C76 /* MatchSimulator.swift */; };
+		49CA26A4292969F900797C76 /* MatchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CA26A3292969F900797C76 /* MatchViewModel.swift */; };
+		49FB094F2950DA1300B60B28 /* MatchScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FB094E2950DA1300B60B28 /* MatchScoreView.swift */; };
+		49FB09512950DA4500B60B28 /* TeamShieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FB09502950DA4500B60B28 /* TeamShieldView.swift */; };
+		49FB09532950E41600B60B28 /* MatchTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FB09522950E41600B60B28 /* MatchTimeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +48,7 @@
 /* Begin PBXFileReference section */
 		49B1CF1129295CD200A59A68 /* SoccerLiveActivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoccerLiveActivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49B1CF1429295CD200A59A68 /* SoccerLiveActivityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoccerLiveActivityApp.swift; sourceTree = "<group>"; };
-		49B1CF1629295CD200A59A68 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		49B1CF1629295CD200A59A68 /* MatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchView.swift; sourceTree = "<group>"; };
 		49B1CF1829295CD600A59A68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49B1CF1A29295CD600A59A68 /* SoccerLiveActivity.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SoccerLiveActivity.entitlements; sourceTree = "<group>"; };
 		49B1CF1C29295CD600A59A68 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +57,18 @@
 		49B1CF2C29295CD600A59A68 /* SoccerLiveActivityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoccerLiveActivityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49B1CF3029295CD600A59A68 /* SoccerLiveActivityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoccerLiveActivityUITests.swift; sourceTree = "<group>"; };
 		49B1CF3229295CD600A59A68 /* SoccerLiveActivityUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoccerLiveActivityUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		49B1CF4129295D9500A59A68 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		49B1CF4329295E0500A59A68 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		49B1CF4529295E2800A59A68 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		49B1CF4729295E4500A59A68 /* MatchTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTime.swift; sourceTree = "<group>"; };
+		49B1CF4929295E5A00A59A68 /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
+		49B1CF4B29295E7100A59A68 /* MatchScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchScore.swift; sourceTree = "<group>"; };
+		49B1CF4D29295E8500A59A68 /* MatchSubstitution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchSubstitution.swift; sourceTree = "<group>"; };
+		49CA26A12929614700797C76 /* MatchSimulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchSimulator.swift; sourceTree = "<group>"; };
+		49CA26A3292969F900797C76 /* MatchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewModel.swift; sourceTree = "<group>"; };
+		49FB094E2950DA1300B60B28 /* MatchScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchScoreView.swift; sourceTree = "<group>"; };
+		49FB09502950DA4500B60B28 /* TeamShieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamShieldView.swift; sourceTree = "<group>"; };
+		49FB09522950E41600B60B28 /* MatchTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTimeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +119,10 @@
 		49B1CF1329295CD200A59A68 /* SoccerLiveActivity */ = {
 			isa = PBXGroup;
 			children = (
+				49FB094D2950DA0100B60B28 /* Components */,
+				49B1CF3F29295D5900A59A68 /* Business */,
+				49B1CF502929601700A59A68 /* Scenes */,
 				49B1CF1429295CD200A59A68 /* SoccerLiveActivityApp.swift */,
-				49B1CF1629295CD200A59A68 /* ContentView.swift */,
 				49B1CF1829295CD600A59A68 /* Assets.xcassets */,
 				49B1CF1A29295CD600A59A68 /* SoccerLiveActivity.entitlements */,
 				49B1CF1B29295CD600A59A68 /* Preview Content */,
@@ -127,6 +153,64 @@
 				49B1CF3229295CD600A59A68 /* SoccerLiveActivityUITestsLaunchTests.swift */,
 			);
 			path = SoccerLiveActivityUITests;
+			sourceTree = "<group>";
+		};
+		49B1CF3F29295D5900A59A68 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				49B1CF4029295D6D00A59A68 /* Models */,
+				49CA26A12929614700797C76 /* MatchSimulator.swift */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		49B1CF4029295D6D00A59A68 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				49B1CF4929295E5A00A59A68 /* Goal.swift */,
+				49B1CF4329295E0500A59A68 /* Player.swift */,
+				49B1CF4129295D9500A59A68 /* Team.swift */,
+				49B1CF4F29295EAA00A59A68 /* Match */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		49B1CF4F29295EAA00A59A68 /* Match */ = {
+			isa = PBXGroup;
+			children = (
+				49B1CF4529295E2800A59A68 /* Match.swift */,
+				49B1CF4B29295E7100A59A68 /* MatchScore.swift */,
+				49B1CF4D29295E8500A59A68 /* MatchSubstitution.swift */,
+				49B1CF4729295E4500A59A68 /* MatchTime.swift */,
+			);
+			path = Match;
+			sourceTree = "<group>";
+		};
+		49B1CF502929601700A59A68 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				49B1CF512929603800A59A68 /* Match */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		49B1CF512929603800A59A68 /* Match */ = {
+			isa = PBXGroup;
+			children = (
+				49B1CF1629295CD200A59A68 /* MatchView.swift */,
+				49CA26A3292969F900797C76 /* MatchViewModel.swift */,
+			);
+			path = Match;
+			sourceTree = "<group>";
+		};
+		49FB094D2950DA0100B60B28 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				49FB094E2950DA1300B60B28 /* MatchScoreView.swift */,
+				49FB09522950E41600B60B28 /* MatchTimeView.swift */,
+				49FB09502950DA4500B60B28 /* TeamShieldView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +343,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49B1CF1729295CD200A59A68 /* ContentView.swift in Sources */,
+				49B1CF4429295E0500A59A68 /* Player.swift in Sources */,
+				49B1CF4229295D9500A59A68 /* Team.swift in Sources */,
+				49B1CF4A29295E5A00A59A68 /* Goal.swift in Sources */,
+				49CA26A4292969F900797C76 /* MatchViewModel.swift in Sources */,
+				49B1CF4E29295E8500A59A68 /* MatchSubstitution.swift in Sources */,
+				49CA26A22929614700797C76 /* MatchSimulator.swift in Sources */,
+				49FB09512950DA4500B60B28 /* TeamShieldView.swift in Sources */,
+				49B1CF4829295E4500A59A68 /* MatchTime.swift in Sources */,
+				49B1CF4C29295E7100A59A68 /* MatchScore.swift in Sources */,
+				49FB09532950E41600B60B28 /* MatchTimeView.swift in Sources */,
+				49B1CF1729295CD200A59A68 /* MatchView.swift in Sources */,
+				49B1CF4629295E2800A59A68 /* Match.swift in Sources */,
 				49B1CF1529295CD200A59A68 /* SoccerLiveActivityApp.swift in Sources */,
+				49FB094F2950DA1300B60B28 /* MatchScoreView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
