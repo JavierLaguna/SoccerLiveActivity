@@ -72,8 +72,8 @@ final class MatchSimulator: ObservableObject {
     }
     
     private func simulateGoal() {
-        let randomInt = Int.random(in: 0...9)
-        let isGoal = randomInt >= 7 && randomInt <= 9
+        let randomInt = Int.random(in: 0...100)
+        let isGoal = randomInt >= 95
         
         if isGoal {
             let isLocalGoal = Bool.random()
