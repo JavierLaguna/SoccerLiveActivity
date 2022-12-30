@@ -8,6 +8,10 @@ struct Player: Equatable {
     let number: Int
     let birthday: Date
     
+    var shirtName: String {
+        alias ?? surname
+    }
+    
     var age: Int {
         return 0 // TODO: JLI - Calculate
     }
