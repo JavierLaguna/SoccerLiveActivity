@@ -31,13 +31,13 @@ struct MatchView: View {
             HStack {
                 List {
                     ForEach(viewModel.match.score.localGoals, id: \.min) { goal in
-                        Text("\(goal.min)\" \(goal.player.surname)")
+                        GoalRowView(goal: goal)
                     }
                 }
                 
                 List {
                     ForEach(viewModel.match.score.visitorGoals, id: \.min) { goal in
-                        Text("\(goal.min)\" \(goal.player.surname)")
+                        GoalRowView(goal: goal)
                     }
                 }
             }

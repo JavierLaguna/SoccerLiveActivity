@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4957EE15295F0DDF00323378 /* GoalRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4957EE14295F0DDF00323378 /* GoalRowView.swift */; };
 		49B1CF1529295CD200A59A68 /* SoccerLiveActivityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1CF1429295CD200A59A68 /* SoccerLiveActivityApp.swift */; };
 		49B1CF1729295CD200A59A68 /* MatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1CF1629295CD200A59A68 /* MatchView.swift */; };
 		49B1CF1929295CD600A59A68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49B1CF1829295CD600A59A68 /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4957EE14295F0DDF00323378 /* GoalRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalRowView.swift; sourceTree = "<group>"; };
 		49B1CF1129295CD200A59A68 /* SoccerLiveActivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoccerLiveActivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49B1CF1429295CD200A59A68 /* SoccerLiveActivityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoccerLiveActivityApp.swift; sourceTree = "<group>"; };
 		49B1CF1629295CD200A59A68 /* MatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchView.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 		49FB094D2950DA0100B60B28 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				4957EE14295F0DDF00323378 /* GoalRowView.swift */,
 				49FB094E2950DA1300B60B28 /* MatchScoreView.swift */,
 				49FB09522950E41600B60B28 /* MatchTimeView.swift */,
 				49FB09502950DA4500B60B28 /* TeamShieldView.swift */,
@@ -354,6 +357,7 @@
 				49B1CF4C29295E7100A59A68 /* MatchScore.swift in Sources */,
 				49FB09532950E41600B60B28 /* MatchTimeView.swift in Sources */,
 				49B1CF1729295CD200A59A68 /* MatchView.swift in Sources */,
+				4957EE15295F0DDF00323378 /* GoalRowView.swift in Sources */,
 				49B1CF4629295E2800A59A68 /* Match.swift in Sources */,
 				49B1CF1529295CD200A59A68 /* SoccerLiveActivityApp.swift in Sources */,
 				49FB094F2950DA1300B60B28 /* MatchScoreView.swift in Sources */,
