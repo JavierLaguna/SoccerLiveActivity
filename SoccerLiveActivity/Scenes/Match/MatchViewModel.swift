@@ -42,8 +42,8 @@ final class MatchViewModel: ObservableObject {
         
         Task {
             simulator.endBackgroundTask()
-            await pauseMatch()
-            continueMatch()
+            await simulator.pauseSimulation()
+            simulator.continueSimulation()
         }
     }
     
@@ -51,8 +51,8 @@ final class MatchViewModel: ObservableObject {
         guard isSimulating else {
             return
         }
-            
-        continueMatchOnBackground()
+        
+        simulator.continueSimationOnBackground()
     }
 }
 
@@ -81,18 +81,16 @@ private extension MatchViewModel {
     }
     
     func pauseMatch() async {
-        isSimulating = false
+        DispatchQueue.main.async {
+            self.isSimulating = false
+        }
+        
         await simulator.pauseSimulation()
     }
     
     func continueMatch() {
         isSimulating = true
         simulator.continueSimulation()
-    }
-    
-    func continueMatchOnBackground() {
-        isSimulating = true
-        simulator.continueSimationOnBackground()
     }
     
     func restartMatch() {

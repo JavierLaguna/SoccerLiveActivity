@@ -3,115 +3,44 @@ import ActivityKit
 import WidgetKit
 import SwiftUI
 
-// TODO: JLI MAKE COMPONENTS
-
 @main
 struct SoccerLiveActivityWidgetExtensionLiveActivity: Widget {
     var body: some WidgetConfiguration {
         ActivityConfiguration(for: MatchLiveActivityAttributes.self) { context in
             // Lock screen/banner UI goes here
             
-            VStack {
-                VStack {
-                    Text(context.attributes.stadium)
-                        .font(.subheadline)
-                        .underline()
-                    
-                    Spacer()
-                    
-                    Text(context.state.time.label)
-                        .font(.title)
-                }
-                
-                HStack {
-                    Spacer()
-                    
-                    VStack {
-                        Image(context.attributes.localTeamShield)
-                            .resizable()
-                            .frame(width: 46, height: 46)
-                        
-                        Text(context.attributes.localTeamName)
-                            .fontWeight(.semibold)
-                    }
-                    
-                    Spacer()
-                    
-                    Text("\(context.state.localGoals)")
-                        .font(.largeTitle)
-                        .fontWeight(.bold)
-                    
-                    Text("-")
-                        .font(.largeTitle)
-                        .fontWeight(.bold)
-                    
-                    Text("\(context.state.visitorGoals)")
-                        .font(.largeTitle)
-                        .fontWeight(.bold)
-                    
-                    Spacer()
-                    
-                    VStack {
-                        Image(context.attributes.visitorTeamShield)
-                            .resizable()
-                            .frame(width: 46, height: 46)
-                        
-                        Text(context.attributes.visitorTeamName)
-                            .fontWeight(.semibold)
-                    }
-                    
-                    Spacer()
-                }
-            }
-            .padding()
+            LockScreenView(context: context)
             
         } dynamicIsland: { context in
             DynamicIsland {
                 // Expanded UI goes here. Compose the expanded UI through
                 // various regions, like leading/trailing/center/bottom
                 DynamicIslandExpandedRegion(.leading) {
-                    HStack {
-                        VStack {
-                            Image(context.attributes.localTeamShield)
-                                .resizable()
-                                .frame(width: 40, height: 40)
-                            
-                            Text(context.attributes.localTeamName)
-                                .fontWeight(.semibold)
-                        }
-                        
-                        Text("\(context.state.localGoals)")
-                            .font(.largeTitle)
-                            .fontWeight(.bold)
-                    }
+                    
+                    DynamicIslandTeamView(
+                        team: context.attributes.localTeamName,
+                        shield: context.attributes.localTeamShield,
+                        goals: context.state.localGoals
+                    )
+                    
                 }
                 DynamicIslandExpandedRegion(.trailing) {
-                    HStack {
-                        Text("\(context.state.visitorGoals)")
-                            .font(.largeTitle)
-                            .fontWeight(.bold)
-                        
-                        VStack {
-                            Image(context.attributes.visitorTeamShield)
-                                .resizable()
-                                .frame(width: 40, height: 40)
-                            
-                            Text(context.attributes.visitorTeamName)
-                                .fontWeight(.semibold)
-                        }
-                    }
+                    
+                    DynamicIslandTeamView(
+                        team: context.attributes.visitorTeamName,
+                        shield: context.attributes.visitorTeamShield,
+                        goals: context.state.visitorGoals,
+                        goalsAt: .left
+                    )
+                    
                 }
                 DynamicIslandExpandedRegion(.bottom) {
-                    VStack {
-                        Text(context.state.time.label)
-                            .font(.title)
-                        
-                        Spacer()
-                        
-                        Text(context.attributes.stadium)
-                            .font(.subheadline)
-                            .underline()
-                    }
+                    
+                    DynamicIslandBottomView(
+                        time: context.state.time.label,
+                        stadium: context.attributes.stadium
+                    )
+                    
                 }
             } compactLeading: {
                 Text(context.state.time.labelShort)
@@ -151,6 +80,6 @@ struct SoccerLiveActivityWidgetExtensionLiveActivity_Previews: PreviewProvider {
             .previewDisplayName("Minimal")
         attributes
             .previewContext(contentState, viewKind: .content)
-            .previewDisplayName("Notification")
+            .previewDisplayName("LockScreen / Notification")
     }
 }

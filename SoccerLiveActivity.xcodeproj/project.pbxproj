@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4924C295298FBCAB0036A169 /* LockScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4924C293298FBC450036A169 /* LockScreenView.swift */; };
+		4924C298298FC02D0036A169 /* DynamicIslandTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4924C296298FC02A0036A169 /* DynamicIslandTeamView.swift */; };
+		4924C29B298FC27B0036A169 /* DynamicIslandBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4924C299298FC2330036A169 /* DynamicIslandBottomView.swift */; };
 		4957EE15295F0DDF00323378 /* GoalRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4957EE14295F0DDF00323378 /* GoalRowView.swift */; };
 		4980CB152987BA1F00E5919D /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4980CAE12987B74800E5919D /* WidgetKit.framework */; };
 		4980CB162987BA1F00E5919D /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4980CAE32987B74800E5919D /* SwiftUI.framework */; };
@@ -60,6 +63,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4924C293298FBC450036A169 /* LockScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenView.swift; sourceTree = "<group>"; };
+		4924C296298FC02A0036A169 /* DynamicIslandTeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicIslandTeamView.swift; sourceTree = "<group>"; };
+		4924C299298FC2330036A169 /* DynamicIslandBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicIslandBottomView.swift; sourceTree = "<group>"; };
 		4957EE14295F0DDF00323378 /* GoalRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalRowView.swift; sourceTree = "<group>"; };
 		4957EE16295F101E00323378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4980CAE12987B74800E5919D /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
@@ -150,6 +156,9 @@
 		4980CB3C2988717A00E5919D /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				4924C299298FC2330036A169 /* DynamicIslandBottomView.swift */,
+				4924C296298FC02A0036A169 /* DynamicIslandTeamView.swift */,
+				4924C293298FBC450036A169 /* LockScreenView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -357,9 +366,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4924C29B298FC27B0036A169 /* DynamicIslandBottomView.swift in Sources */,
 				4980CB1B2987BA1F00E5919D /* SoccerLiveActivityWidgetExtensionLiveActivity.swift in Sources */,
 				4980CB2D2987BBEE00E5919D /* MatchLiveActivityAttributes.swift in Sources */,
 				4980CB3B298866C900E5919D /* MatchTime.swift in Sources */,
+				4924C298298FC02D0036A169 /* DynamicIslandTeamView.swift in Sources */,
+				4924C295298FBCAB0036A169 /* LockScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
