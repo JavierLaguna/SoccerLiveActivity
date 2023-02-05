@@ -94,10 +94,11 @@ private extension MatchViewModel {
     }
     
     func restartMatch() {
-        // TODO: FIX
         let newMatch = Match.getFakeMatch()
         self.match = newMatch
         self.simulator = MatchSimulator(match: newMatch)
+        
+        listenSimulationChanges()
         
         startMatch()
     }
