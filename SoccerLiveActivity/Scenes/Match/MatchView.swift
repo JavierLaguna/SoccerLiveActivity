@@ -2,9 +2,10 @@
 import SwiftUI
 
 struct MatchView: View {
-    
+    @Environment(\.scenePhase) private var phase
+
     @ObservedObject private var viewModel = MatchViewModel()
-    
+        
     var body: some View {
         VStack {
             Text(viewModel.match.stadium)
@@ -45,11 +46,10 @@ struct MatchView: View {
             Spacer()
             
             Button {
-                Task {
-                    await viewModel.startMatch()
-                }
+                viewModel.onPressMainButton()
             } label: {
-                Text("Empezar Partido".uppercased())
+                let title = viewModel.canPauseMatch ? "Pausar Partido" : "Empezar Partido"
+                Text(title.uppercased())
                     .font(.title3)
                     .tint(.white)
             }
@@ -57,6 +57,16 @@ struct MatchView: View {
             .padding(.horizontal, 12)
             .background(.blue)
             .cornerRadius(8)
+            .onChange(of: phase) { newPhase in
+                switch newPhase {
+                case .active:
+                    viewModel.appEnterOnForeground()
+                case .background:
+                    viewModel.appEnterOnBackground()
+                default:
+                    break
+                }
+            }
         }
     }
 }

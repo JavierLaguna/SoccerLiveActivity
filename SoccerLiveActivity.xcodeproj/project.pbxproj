@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		4957EE15295F0DDF00323378 /* GoalRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4957EE14295F0DDF00323378 /* GoalRowView.swift */; };
+		4980CB152987BA1F00E5919D /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4980CAE12987B74800E5919D /* WidgetKit.framework */; };
+		4980CB162987BA1F00E5919D /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4980CAE32987B74800E5919D /* SwiftUI.framework */; };
+		4980CB1B2987BA1F00E5919D /* SoccerLiveActivityWidgetExtensionLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4980CB1A2987BA1F00E5919D /* SoccerLiveActivityWidgetExtensionLiveActivity.swift */; };
+		4980CB1F2987BA2100E5919D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4980CB1E2987BA2100E5919D /* Assets.xcassets */; };
+		4980CB232987BA2100E5919D /* SoccerLiveActivityWidgetExtensionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4980CB142987BA1F00E5919D /* SoccerLiveActivityWidgetExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4980CB2C2987BBE300E5919D /* MatchLiveActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4980CB2B2987BBE300E5919D /* MatchLiveActivityAttributes.swift */; };
+		4980CB2D2987BBEE00E5919D /* MatchLiveActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4980CB2B2987BBE300E5919D /* MatchLiveActivityAttributes.swift */; };
+		4980CB3A2988648600E5919D /* LiveActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4980CB392988648600E5919D /* LiveActivityManager.swift */; };
+		4980CB3B298866C900E5919D /* MatchTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1CF4729295E4500A59A68 /* MatchTime.swift */; };
 		49B1CF1529295CD200A59A68 /* SoccerLiveActivityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1CF1429295CD200A59A68 /* SoccerLiveActivityApp.swift */; };
 		49B1CF1729295CD200A59A68 /* MatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1CF1629295CD200A59A68 /* MatchView.swift */; };
 		49B1CF1929295CD600A59A68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49B1CF1829295CD600A59A68 /* Assets.xcassets */; };
 		49B1CF1D29295CD600A59A68 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49B1CF1C29295CD600A59A68 /* Preview Assets.xcassets */; };
-		49B1CF2729295CD600A59A68 /* SoccerLiveActivityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1CF2629295CD600A59A68 /* SoccerLiveActivityTests.swift */; };
-		49B1CF3129295CD600A59A68 /* SoccerLiveActivityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1CF3029295CD600A59A68 /* SoccerLiveActivityUITests.swift */; };
-		49B1CF3329295CD600A59A68 /* SoccerLiveActivityUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1CF3229295CD600A59A68 /* SoccerLiveActivityUITestsLaunchTests.swift */; };
 		49B1CF4229295D9500A59A68 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1CF4129295D9500A59A68 /* Team.swift */; };
 		49B1CF4429295E0500A59A68 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1CF4329295E0500A59A68 /* Player.swift */; };
 		49B1CF4629295E2800A59A68 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1CF4529295E2800A59A68 /* Match.swift */; };
@@ -30,35 +36,46 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		49B1CF2329295CD600A59A68 /* PBXContainerItemProxy */ = {
+		4980CB212987BA2100E5919D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 49B1CF0929295CD200A59A68 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 49B1CF1029295CD200A59A68;
-			remoteInfo = SoccerLiveActivity;
-		};
-		49B1CF2D29295CD600A59A68 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 49B1CF0929295CD200A59A68 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 49B1CF1029295CD200A59A68;
-			remoteInfo = SoccerLiveActivity;
+			remoteGlobalIDString = 4980CB132987BA1F00E5919D;
+			remoteInfo = SoccerLiveActivityWidgetExtensionExtension;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4980CAF52987B74C00E5919D /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4980CB232987BA2100E5919D /* SoccerLiveActivityWidgetExtensionExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		4957EE14295F0DDF00323378 /* GoalRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalRowView.swift; sourceTree = "<group>"; };
+		4957EE16295F101E00323378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4980CAE12987B74800E5919D /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		4980CAE32987B74800E5919D /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		4980CB142987BA1F00E5919D /* SoccerLiveActivityWidgetExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SoccerLiveActivityWidgetExtensionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4980CB1A2987BA1F00E5919D /* SoccerLiveActivityWidgetExtensionLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoccerLiveActivityWidgetExtensionLiveActivity.swift; sourceTree = "<group>"; };
+		4980CB1E2987BA2100E5919D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4980CB202987BA2100E5919D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4980CB2B2987BBE300E5919D /* MatchLiveActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchLiveActivityAttributes.swift; sourceTree = "<group>"; };
+		4980CB392988648600E5919D /* LiveActivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityManager.swift; sourceTree = "<group>"; };
 		49B1CF1129295CD200A59A68 /* SoccerLiveActivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoccerLiveActivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49B1CF1429295CD200A59A68 /* SoccerLiveActivityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoccerLiveActivityApp.swift; sourceTree = "<group>"; };
 		49B1CF1629295CD200A59A68 /* MatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchView.swift; sourceTree = "<group>"; };
 		49B1CF1829295CD600A59A68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49B1CF1A29295CD600A59A68 /* SoccerLiveActivity.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SoccerLiveActivity.entitlements; sourceTree = "<group>"; };
 		49B1CF1C29295CD600A59A68 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		49B1CF2229295CD600A59A68 /* SoccerLiveActivityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoccerLiveActivityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		49B1CF2629295CD600A59A68 /* SoccerLiveActivityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoccerLiveActivityTests.swift; sourceTree = "<group>"; };
-		49B1CF2C29295CD600A59A68 /* SoccerLiveActivityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoccerLiveActivityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		49B1CF3029295CD600A59A68 /* SoccerLiveActivityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoccerLiveActivityUITests.swift; sourceTree = "<group>"; };
-		49B1CF3229295CD600A59A68 /* SoccerLiveActivityUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoccerLiveActivityUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		49B1CF4129295D9500A59A68 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		49B1CF4329295E0500A59A68 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		49B1CF4529295E2800A59A68 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
@@ -74,21 +91,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4980CB112987BA1F00E5919D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4980CB162987BA1F00E5919D /* SwiftUI.framework in Frameworks */,
+				4980CB152987BA1F00E5919D /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49B1CF0E29295CD200A59A68 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		49B1CF1F29295CD600A59A68 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		49B1CF2929295CD600A59A68 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -98,12 +110,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4980CAE02987B74800E5919D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4980CAE12987B74800E5919D /* WidgetKit.framework */,
+				4980CAE32987B74800E5919D /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4980CB172987BA1F00E5919D /* SoccerLiveActivityWidgetExtension */ = {
+			isa = PBXGroup;
+			children = (
+				4980CB202987BA2100E5919D /* Info.plist */,
+				4980CB3C2988717A00E5919D /* Components */,
+				4980CB1A2987BA1F00E5919D /* SoccerLiveActivityWidgetExtensionLiveActivity.swift */,
+				4980CB1E2987BA2100E5919D /* Assets.xcassets */,
+			);
+			path = SoccerLiveActivityWidgetExtension;
+			sourceTree = "<group>";
+		};
+		4980CB372988645600E5919D /* LiveActivity */ = {
+			isa = PBXGroup;
+			children = (
+				4980CB392988648600E5919D /* LiveActivityManager.swift */,
+				4980CB2B2987BBE300E5919D /* MatchLiveActivityAttributes.swift */,
+			);
+			path = LiveActivity;
+			sourceTree = "<group>";
+		};
+		4980CB382988646300E5919D /* Simulator */ = {
+			isa = PBXGroup;
+			children = (
+				49CA26A12929614700797C76 /* MatchSimulator.swift */,
+			);
+			path = Simulator;
+			sourceTree = "<group>";
+		};
+		4980CB3C2988717A00E5919D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		49B1CF0829295CD200A59A68 = {
 			isa = PBXGroup;
 			children = (
 				49B1CF1329295CD200A59A68 /* SoccerLiveActivity */,
-				49B1CF2529295CD600A59A68 /* SoccerLiveActivityTests */,
-				49B1CF2F29295CD600A59A68 /* SoccerLiveActivityUITests */,
+				4980CB172987BA1F00E5919D /* SoccerLiveActivityWidgetExtension */,
+				4980CAE02987B74800E5919D /* Frameworks */,
 				49B1CF1229295CD200A59A68 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,8 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				49B1CF1129295CD200A59A68 /* SoccerLiveActivity.app */,
-				49B1CF2229295CD600A59A68 /* SoccerLiveActivityTests.xctest */,
-				49B1CF2C29295CD600A59A68 /* SoccerLiveActivityUITests.xctest */,
+				4980CB142987BA1F00E5919D /* SoccerLiveActivityWidgetExtensionExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,6 +176,7 @@
 		49B1CF1329295CD200A59A68 /* SoccerLiveActivity */ = {
 			isa = PBXGroup;
 			children = (
+				4957EE16295F101E00323378 /* Info.plist */,
 				49FB094D2950DA0100B60B28 /* Components */,
 				49B1CF3F29295D5900A59A68 /* Business */,
 				49B1CF502929601700A59A68 /* Scenes */,
@@ -140,28 +196,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		49B1CF2529295CD600A59A68 /* SoccerLiveActivityTests */ = {
-			isa = PBXGroup;
-			children = (
-				49B1CF2629295CD600A59A68 /* SoccerLiveActivityTests.swift */,
-			);
-			path = SoccerLiveActivityTests;
-			sourceTree = "<group>";
-		};
-		49B1CF2F29295CD600A59A68 /* SoccerLiveActivityUITests */ = {
-			isa = PBXGroup;
-			children = (
-				49B1CF3029295CD600A59A68 /* SoccerLiveActivityUITests.swift */,
-				49B1CF3229295CD600A59A68 /* SoccerLiveActivityUITestsLaunchTests.swift */,
-			);
-			path = SoccerLiveActivityUITests;
-			sourceTree = "<group>";
-		};
 		49B1CF3F29295D5900A59A68 /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				4980CB372988645600E5919D /* LiveActivity */,
 				49B1CF4029295D6D00A59A68 /* Models */,
-				49CA26A12929614700797C76 /* MatchSimulator.swift */,
+				4980CB382988646300E5919D /* Simulator */,
 			);
 			path = Business;
 			sourceTree = "<group>";
@@ -219,6 +259,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4980CB132987BA1F00E5919D /* SoccerLiveActivityWidgetExtensionExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4980CB242987BA2100E5919D /* Build configuration list for PBXNativeTarget "SoccerLiveActivityWidgetExtensionExtension" */;
+			buildPhases = (
+				4980CB102987BA1F00E5919D /* Sources */,
+				4980CB112987BA1F00E5919D /* Frameworks */,
+				4980CB122987BA1F00E5919D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoccerLiveActivityWidgetExtensionExtension;
+			productName = SoccerLiveActivityWidgetExtensionExtension;
+			productReference = 4980CB142987BA1F00E5919D /* SoccerLiveActivityWidgetExtensionExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		49B1CF1029295CD200A59A68 /* SoccerLiveActivity */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49B1CF3629295CD600A59A68 /* Build configuration list for PBXNativeTarget "SoccerLiveActivity" */;
@@ -226,51 +283,17 @@
 				49B1CF0D29295CD200A59A68 /* Sources */,
 				49B1CF0E29295CD200A59A68 /* Frameworks */,
 				49B1CF0F29295CD200A59A68 /* Resources */,
+				4980CAF52987B74C00E5919D /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4980CB222987BA2100E5919D /* PBXTargetDependency */,
 			);
 			name = SoccerLiveActivity;
 			productName = SoccerLiveActivity;
 			productReference = 49B1CF1129295CD200A59A68 /* SoccerLiveActivity.app */;
 			productType = "com.apple.product-type.application";
-		};
-		49B1CF2129295CD600A59A68 /* SoccerLiveActivityTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 49B1CF3929295CD600A59A68 /* Build configuration list for PBXNativeTarget "SoccerLiveActivityTests" */;
-			buildPhases = (
-				49B1CF1E29295CD600A59A68 /* Sources */,
-				49B1CF1F29295CD600A59A68 /* Frameworks */,
-				49B1CF2029295CD600A59A68 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				49B1CF2429295CD600A59A68 /* PBXTargetDependency */,
-			);
-			name = SoccerLiveActivityTests;
-			productName = SoccerLiveActivityTests;
-			productReference = 49B1CF2229295CD600A59A68 /* SoccerLiveActivityTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		49B1CF2B29295CD600A59A68 /* SoccerLiveActivityUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 49B1CF3C29295CD600A59A68 /* Build configuration list for PBXNativeTarget "SoccerLiveActivityUITests" */;
-			buildPhases = (
-				49B1CF2829295CD600A59A68 /* Sources */,
-				49B1CF2929295CD600A59A68 /* Frameworks */,
-				49B1CF2A29295CD600A59A68 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				49B1CF2E29295CD600A59A68 /* PBXTargetDependency */,
-			);
-			name = SoccerLiveActivityUITests;
-			productName = SoccerLiveActivityUITests;
-			productReference = 49B1CF2C29295CD600A59A68 /* SoccerLiveActivityUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -279,19 +302,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					4980CB132987BA1F00E5919D = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					49B1CF1029295CD200A59A68 = {
 						CreatedOnToolsVersion = 14.0.1;
-					};
-					49B1CF2129295CD600A59A68 = {
-						CreatedOnToolsVersion = 14.0.1;
-						TestTargetID = 49B1CF1029295CD200A59A68;
-					};
-					49B1CF2B29295CD600A59A68 = {
-						CreatedOnToolsVersion = 14.0.1;
-						TestTargetID = 49B1CF1029295CD200A59A68;
 					};
 				};
 			};
@@ -309,13 +327,20 @@
 			projectRoot = "";
 			targets = (
 				49B1CF1029295CD200A59A68 /* SoccerLiveActivity */,
-				49B1CF2129295CD600A59A68 /* SoccerLiveActivityTests */,
-				49B1CF2B29295CD600A59A68 /* SoccerLiveActivityUITests */,
+				4980CB132987BA1F00E5919D /* SoccerLiveActivityWidgetExtensionExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4980CB122987BA1F00E5919D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4980CB1F2987BA2100E5919D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49B1CF0F29295CD200A59A68 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -325,23 +350,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		49B1CF2029295CD600A59A68 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		49B1CF2A29295CD600A59A68 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4980CB102987BA1F00E5919D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4980CB1B2987BA1F00E5919D /* SoccerLiveActivityWidgetExtensionLiveActivity.swift in Sources */,
+				4980CB2D2987BBEE00E5919D /* MatchLiveActivityAttributes.swift in Sources */,
+				4980CB3B298866C900E5919D /* MatchTime.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49B1CF0D29295CD200A59A68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -352,7 +373,9 @@
 				49CA26A4292969F900797C76 /* MatchViewModel.swift in Sources */,
 				49B1CF4E29295E8500A59A68 /* MatchSubstitution.swift in Sources */,
 				49CA26A22929614700797C76 /* MatchSimulator.swift in Sources */,
+				4980CB3A2988648600E5919D /* LiveActivityManager.swift in Sources */,
 				49FB09512950DA4500B60B28 /* TeamShieldView.swift in Sources */,
+				4980CB2C2987BBE300E5919D /* MatchLiveActivityAttributes.swift in Sources */,
 				49B1CF4829295E4500A59A68 /* MatchTime.swift in Sources */,
 				49B1CF4C29295E7100A59A68 /* MatchScore.swift in Sources */,
 				49FB09532950E41600B60B28 /* MatchTimeView.swift in Sources */,
@@ -364,39 +387,76 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		49B1CF1E29295CD600A59A68 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				49B1CF2729295CD600A59A68 /* SoccerLiveActivityTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		49B1CF2829295CD600A59A68 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				49B1CF3329295CD600A59A68 /* SoccerLiveActivityUITestsLaunchTests.swift in Sources */,
-				49B1CF3129295CD600A59A68 /* SoccerLiveActivityUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		49B1CF2429295CD600A59A68 /* PBXTargetDependency */ = {
+		4980CB222987BA2100E5919D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 49B1CF1029295CD200A59A68 /* SoccerLiveActivity */;
-			targetProxy = 49B1CF2329295CD600A59A68 /* PBXContainerItemProxy */;
-		};
-		49B1CF2E29295CD600A59A68 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 49B1CF1029295CD200A59A68 /* SoccerLiveActivity */;
-			targetProxy = 49B1CF2D29295CD600A59A68 /* PBXContainerItemProxy */;
+			target = 4980CB132987BA1F00E5919D /* SoccerLiveActivityWidgetExtensionExtension */;
+			targetProxy = 4980CB212987BA2100E5919D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		4980CB252987BA2100E5919D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HDC4S2P5MK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SoccerLiveActivityWidgetExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SoccerLiveActivityWidgetExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jlagunadev.SoccerLiveActivity.SoccerLiveActivityWidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4980CB262987BA2100E5919D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HDC4S2P5MK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SoccerLiveActivityWidgetExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SoccerLiveActivityWidgetExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jlagunadev.SoccerLiveActivity.SoccerLiveActivityWidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		49B1CF3429295CD600A59A68 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -509,6 +569,7 @@
 		49B1CF3729295CD600A59A68 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SoccerLiveActivity/SoccerLiveActivity.entitlements;
@@ -519,6 +580,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SoccerLiveActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Soccer LiveActivity";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -527,9 +591,9 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
@@ -537,7 +601,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jlagunadev.SoccerLiveActivity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -547,6 +613,7 @@
 		49B1CF3829295CD600A59A68 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SoccerLiveActivity/SoccerLiveActivity.entitlements;
@@ -557,6 +624,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SoccerLiveActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Soccer LiveActivity";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -565,9 +635,9 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
@@ -575,106 +645,27 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jlagunadev.SoccerLiveActivity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		49B1CF3A29295CD600A59A68 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HDC4S2P5MK;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jlagunadev.SoccerLiveActivityTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoccerLiveActivity.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SoccerLiveActivity";
-			};
-			name = Debug;
-		};
-		49B1CF3B29295CD600A59A68 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HDC4S2P5MK;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jlagunadev.SoccerLiveActivityTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoccerLiveActivity.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SoccerLiveActivity";
-			};
-			name = Release;
-		};
-		49B1CF3D29295CD600A59A68 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HDC4S2P5MK;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jlagunadev.SoccerLiveActivityUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SoccerLiveActivity;
-			};
-			name = Debug;
-		};
-		49B1CF3E29295CD600A59A68 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HDC4S2P5MK;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jlagunadev.SoccerLiveActivityUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SoccerLiveActivity;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4980CB242987BA2100E5919D /* Build configuration list for PBXNativeTarget "SoccerLiveActivityWidgetExtensionExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4980CB252987BA2100E5919D /* Debug */,
+				4980CB262987BA2100E5919D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		49B1CF0C29295CD200A59A68 /* Build configuration list for PBXProject "SoccerLiveActivity" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -689,24 +680,6 @@
 			buildConfigurations = (
 				49B1CF3729295CD600A59A68 /* Debug */,
 				49B1CF3829295CD600A59A68 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		49B1CF3929295CD600A59A68 /* Build configuration list for PBXNativeTarget "SoccerLiveActivityTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				49B1CF3A29295CD600A59A68 /* Debug */,
-				49B1CF3B29295CD600A59A68 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		49B1CF3C29295CD600A59A68 /* Build configuration list for PBXNativeTarget "SoccerLiveActivityUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				49B1CF3D29295CD600A59A68 /* Debug */,
-				49B1CF3E29295CD600A59A68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

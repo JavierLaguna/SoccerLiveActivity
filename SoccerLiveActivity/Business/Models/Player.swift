@@ -11,8 +11,4 @@ struct Player: Equatable {
     var shirtName: String {
         alias ?? surname
     }
-    
-    var age: Int {
-        return 0 // TODO: JLI - Calculate
-    }
 }

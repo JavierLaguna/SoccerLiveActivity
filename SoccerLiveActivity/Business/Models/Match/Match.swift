@@ -117,3 +117,41 @@ struct Match {
         score = MatchScore(localGoals: score.localGoals, visitorGoals: visitorGoals)
     }
 }
+
+extension Match {
+    
+    static func getFakeMatch() -> Match {
+        
+        let koke = Player(name: "Jorge", surname: "Resurección", alias: "Koke", number: 6, birthday: Date())
+        let atleti = Team(
+            name: "Atlético de Madrid",
+            shortName: "ATM",
+            shield: "shield_atm",
+            stadium: "Civitas Metropolitano",
+            foundationDate: Date(),
+            coach: "Diego P. Simeone",
+            players: [koke]
+        )
+        
+        let modric = Player(name: "Luka", surname: "Modric", alias: "Modric", number: 10, birthday: Date())
+        let madrid = Team(
+            name: "Real Madrid",
+            shortName: "RMA",
+            shield: "shield_rma",
+            stadium: "Santiago Bernabeu",
+            foundationDate: Date(),
+            coach: "Carlo Ancelotti",
+            players: [modric]
+        )
+        
+        return Match(
+            local: atleti,
+            visitor: madrid,
+            localInitPlayers: [koke],
+            localInitBench: [],
+            visitorInitPlayers: [],
+            visitorInitBench: [],
+            date: Date()
+        )
+    }
+}
