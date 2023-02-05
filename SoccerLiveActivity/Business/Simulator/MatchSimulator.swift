@@ -8,7 +8,6 @@ final class MatchSimulator: ObservableObject {
     
     private let simulateDuration: Duration = .seconds(1)
     private let breakTime = 5
-    private let endTime = 5
     
     @Published private(set) var match: Match
     private let firstTimeDuration: Int
@@ -145,6 +144,7 @@ private extension MatchSimulator {
         isSimulating = false
         match.endMatch()
         
+        await liveActivityManager.updateLiveActivity(match: match)
         await liveActivityManager.endLiveActivity()
         
         endBackgroundTask()
@@ -175,10 +175,6 @@ private extension MatchSimulator {
     }
     
     func waitSimulateTime() async {
-        do {
-            try await Task.sleep(until: .now + simulateDuration, clock: .continuous)
-        } catch {
-            print("ERROR - waitSimulateTime - \(error.localizedDescription)")
-        }
+        await TimerUtils.waitTime(time: simulateDuration)
     }
 }

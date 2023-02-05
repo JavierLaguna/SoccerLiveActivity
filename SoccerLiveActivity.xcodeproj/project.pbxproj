@@ -10,6 +10,7 @@
 		4924C295298FBCAB0036A169 /* LockScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4924C293298FBC450036A169 /* LockScreenView.swift */; };
 		4924C298298FC02D0036A169 /* DynamicIslandTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4924C296298FC02A0036A169 /* DynamicIslandTeamView.swift */; };
 		4924C29B298FC27B0036A169 /* DynamicIslandBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4924C299298FC2330036A169 /* DynamicIslandBottomView.swift */; };
+		4924C29E298FCFAE0036A169 /* TimerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4924C29D298FCFAE0036A169 /* TimerUtils.swift */; };
 		4957EE15295F0DDF00323378 /* GoalRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4957EE14295F0DDF00323378 /* GoalRowView.swift */; };
 		4980CB152987BA1F00E5919D /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4980CAE12987B74800E5919D /* WidgetKit.framework */; };
 		4980CB162987BA1F00E5919D /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4980CAE32987B74800E5919D /* SwiftUI.framework */; };
@@ -66,6 +67,7 @@
 		4924C293298FBC450036A169 /* LockScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenView.swift; sourceTree = "<group>"; };
 		4924C296298FC02A0036A169 /* DynamicIslandTeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicIslandTeamView.swift; sourceTree = "<group>"; };
 		4924C299298FC2330036A169 /* DynamicIslandBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicIslandBottomView.swift; sourceTree = "<group>"; };
+		4924C29D298FCFAE0036A169 /* TimerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerUtils.swift; sourceTree = "<group>"; };
 		4957EE14295F0DDF00323378 /* GoalRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalRowView.swift; sourceTree = "<group>"; };
 		4957EE16295F101E00323378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4980CAE12987B74800E5919D /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
@@ -116,6 +118,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4924C29C298FCF930036A169 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4924C29D298FCFAE0036A169 /* TimerUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		4980CAE02987B74800E5919D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				4957EE16295F101E00323378 /* Info.plist */,
+				4924C29C298FCF930036A169 /* Utils */,
 				49FB094D2950DA0100B60B28 /* Components */,
 				49B1CF3F29295D5900A59A68 /* Business */,
 				49B1CF502929601700A59A68 /* Scenes */,
@@ -386,6 +397,7 @@
 				49B1CF4E29295E8500A59A68 /* MatchSubstitution.swift in Sources */,
 				49CA26A22929614700797C76 /* MatchSimulator.swift in Sources */,
 				4980CB3A2988648600E5919D /* LiveActivityManager.swift in Sources */,
+				4924C29E298FCFAE0036A169 /* TimerUtils.swift in Sources */,
 				49FB09512950DA4500B60B28 /* TeamShieldView.swift in Sources */,
 				4980CB2C2987BBE300E5919D /* MatchLiveActivityAttributes.swift in Sources */,
 				49B1CF4829295E4500A59A68 /* MatchTime.swift in Sources */,
@@ -605,7 +617,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
@@ -649,7 +661,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.3;

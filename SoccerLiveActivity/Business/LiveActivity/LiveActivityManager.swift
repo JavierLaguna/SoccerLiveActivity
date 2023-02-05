@@ -4,6 +4,8 @@ import ActivityKit
 
 final class LiveActivityManager {
     
+    private let endActivityDuration: Duration = .seconds(10)
+    
     private var match: Match
     private var activity: Activity<MatchLiveActivityAttributes>?
     
@@ -21,11 +23,15 @@ final class LiveActivityManager {
                     localTeamShield: match.localTeam.shield,
                     visitorTeamShield: match.visitorTeam.shield
                 ),
-                contentState: MatchLiveActivityAttributes.ContentState(
-                    time: match.time,
-                    localGoals: 0,
-                    visitorGoals: 0
-                )
+                content: .init(
+                    state: MatchLiveActivityAttributes.ContentState(
+                        time: match.time,
+                        localGoals: 0,
+                        visitorGoals: 0
+                    ),
+                    staleDate: nil
+                ),
+                pushType: nil
             )
             
         } catch {
@@ -36,23 +42,32 @@ final class LiveActivityManager {
     func updateLiveActivity(match: Match) async {
         self.match = match
         
-        await activity?.update(using: MatchLiveActivityAttributes.ContentState(
-            time: match.time,
-            localGoals: match.score.localGoals.count,
-            visitorGoals: match.score.visitorGoals.count
-        ))
-    }
-    
-    func endLiveActivity() async {
-        // TODO: JLI NIL ACTIVITY ??
-        // TODO: FIX END TIME TO SHOW
-        await activity?.end(
-            using: MatchLiveActivityAttributes.ContentState(
+        await activity?.update(.init(
+            state: MatchLiveActivityAttributes.ContentState(
                 time: match.time,
                 localGoals: match.score.localGoals.count,
                 visitorGoals: match.score.visitorGoals.count
             ),
-            dismissalPolicy: .after(.now + 30)
+            staleDate: nil
+        ))
+    }
+    
+    func endLiveActivity() async {
+        
+        await TimerUtils.waitTime(time: endActivityDuration)
+        
+        await activity?.end(
+            .init(
+                state: MatchLiveActivityAttributes.ContentState(
+                    time: match.time,
+                    localGoals: match.score.localGoals.count,
+                    visitorGoals: match.score.visitorGoals.count
+                ),
+                staleDate: nil
+            ),
+            dismissalPolicy: .immediate
         )
+        
+        activity = nil
     }
 }
