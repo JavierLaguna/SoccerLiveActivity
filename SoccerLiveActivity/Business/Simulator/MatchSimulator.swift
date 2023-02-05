@@ -158,14 +158,14 @@ private extension MatchSimulator {
             let isLocalGoal = Bool.random()
             
             if isLocalGoal {
-                guard let player = match.localTeam.players.first else {
+                guard let player = match.localCurrentPlayers.first else {
                     return
                 }
                 
                 match.doLocalGoal(player: player)
                 
             } else {
-                guard let player = match.visitorTeam.players.first else {
+                guard let player = match.visitorCurrentPlayers.first else {
                     return
                 }
                 

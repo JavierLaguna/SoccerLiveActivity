@@ -149,7 +149,7 @@ extension Match {
             visitor: madrid,
             localInitPlayers: [koke],
             localInitBench: [],
-            visitorInitPlayers: [],
+            visitorInitPlayers: [modric],
             visitorInitBench: [],
             date: Date()
         )
